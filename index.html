@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleksandra's Clothes - Clothing at Another Level</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <span class="logo-text">Aleksandra's clothes</span>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#about" class="active">About us</a></li>
+                <li><a href="#products">Our Products</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+            <div class="nav-icons">
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-user"></i>
+                <i class="fas fa-moon" id="theme-toggle"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Clothing at <span class="highlight">another level</span> of detail at your door
+            </h1>
+
+            <div class="hero-products">
+                <div class="hero-product-card">
+                    <img src="images/image 2.png" alt="Product 1" class="product-image">
+                </div>
+                <div class="hero-product-card">
+                    <img src="images/image 3.png" alt="Product 2" class="product-image">
+                </div>
+                <div class="hero-product-card">
+                    <img src="images/image 4 (1).png" alt="Product 3" class="product-image">
+                </div>
+            </div>
+
+            <div class="hero-cta">
+                <p>Choose from different brands and styles</p>
+                <button class="btn-secondary">View more</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Just Arrived Section -->
+    <section class="just-arrived" id="products">
+        <h2 class="section-title">Just arrived</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image-wrapper">
+                    <img src="images/pink dress.jpg" alt="Pink Blouse" class="product-img">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <h3>Pink Blouse</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>4.5</span>
+                    </div>
+                    <p class="product-price">$19.99</p>
+                    <button class="btn-add-cart">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-wrapper">
+                    <img src="images/brown top.jpg" alt="Top Brown" class="product-img">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <h3>Top Brown</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>4.5</span>
+                    </div>
+                    <p class="product-price">$24.99</p>
+                    <button class="btn-add-cart">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-wrapper">
+                    <img src="images/yellow-jaket.jpg" alt="Leather Yellow" class="product-img">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <h3>Leather Yellow</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>4.5</span>
+                    </div>
+                    <p class="product-price">$49.99</p>
+                    <button class="btn-add-cart">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-wrapper">
+                    <img src="images/light sweater.jpg" alt="Light Sweater" class="product-img">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <h3>Light Sweater</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>4.5</span>
+                    </div>
+                    <p class="product-price">$29.99</p>
+                    <button class="btn-add-cart">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fashion Trend Banner -->
+    <section class="fashion-trend">
+        <div class="fashion-content">
+            <div class="fashion-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            </div>
+            <div class="fashion-title">FASHION TREND</div>
+        </div>
+    </section>
+
+    <!-- 33% Off Banner -->
+    <section class="discount-banner">
+        <div class="discount-content">
+            <div class="discount-image">
+                <img src="images/Promotional Image.png" alt="Promotional" class="discount-model">
+            </div>
+            <div class="discount-text">
+                <h2>33% Off</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <h2 class="section-title">Our Reviews</h2>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="review-avatar"></div>
+                <h3>Jane Doe</h3>
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+
+            <div class="review-card">
+                <div class="review-avatar"></div>
+                <h3>John Smith</h3>
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div class="review-card">
+                <div class="review-avatar"></div>
+                <h3>Sarah Johnson</h3>
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+
+            <div class="review-card">
+                <div class="review-avatar"></div>
+                <h3>Mike Wilson</h3>
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+
+            <div class="review-card">
+                <div class="review-avatar"></div>
+                <h3>Emily Brown</h3>
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            </div>
+
+            <div class="review-card">
+                <div class="review-avatar"></div>
+                <h3>David Lee</h3>
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- First Purchase Discount Section -->
+    <section class="first-purchase">
+        <div class="purchase-content">
+            <div class="purchase-offer">
+                <h2>First purchase gets you 40% off total order!</h2>
+                <button class="btn-shop-now">Shop Now</button>
+                <img src="images/pink dress.jpg" alt="Pink Dress" class="purchase-model">
+            </div>
+            <div class="purchase-portrait">
+                <img src="images/Promotional Image.png" alt="Portrait" class="purchase-portrait-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Our Shop</h3>
+                <ul>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#products">Our products</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">Our team</a></li>
+                    <li><a href="#">Our mission</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Help us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Address</h3>
+                <p>Aleksandrina's clothes, 123 Main St, New York, NY 10001</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Aleksandrina's clothes. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
