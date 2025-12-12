@@ -1,0 +1,148 @@
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .fashion-title {
+        font-size: 48px;
+    }
+    
+    .discount-text h2 {
+        font-size: 72px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 32px;
+    }
+    
+    .hero-products {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-product-card {
+        height: 500px;
+    }
+    
+    .hero-product-card:nth-child(2) {
+        margin-top: 0;
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .fashion-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .fashion-title {
+        font-size: 36px;
+    }
+    
+    .discount-content {
+        flex-direction: column;
+    }
+    
+    .discount-text h2 {
+        font-size: 48px;
+    }
+    
+    .purchase-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-links {
+        gap: 15px;
+    }
+    
+    .nav-links a {
+        font-size: 14px;
+    }
+    
+    .modal-body {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    
+    .modal-content {
+        width: 95%;
+    }
+    
+    .modal-info h2 {
+        font-size: 24px;
+    }
+    
+    .cart-body {
+        padding: 12px 15px;
+        max-height: 300px;
+    }
+    
+    .cart-header {
+        padding: 15px 15px 12px;
+    }
+    
+    .cart-header h2 {
+        font-size: 20px;
+    }
+    
+    .cart-footer {
+        padding: 12px 15px 15px;
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch;
+    }
+    
+    .cart-total {
+        font-size: 18px;
+    }
+    
+    .cart-checkout {
+        width: 100%;
+    }
+    
+    .cart-item {
+        padding: 12px 0;
+        gap: 12px;
+    }
+    
+    .cart-item-image {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .cart-item-name {
+        font-size: 14px;
+    }
+    
+    .cart-item-price {
+        font-size: 13px;
+    }
+    
+    .quantity-btn {
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+    }
+    
+    .quantity-value {
+        font-size: 13px;
+        min-width: 20px;
+    }
+}
+

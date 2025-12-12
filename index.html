@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aleksandra's Clothes - Clothing at Another Level</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- CSS Components -->
+    <link rel="stylesheet" href="components/css/base.css">
+    <link rel="stylesheet" href="components/css/header.css">
+    <link rel="stylesheet" href="components/css/hero.css">
+    <link rel="stylesheet" href="components/css/products.css">
+    <link rel="stylesheet" href="components/css/modal.css">
+    <link rel="stylesheet" href="components/css/cart.css">
+    <link rel="stylesheet" href="components/css/footer.css">
+    <link rel="stylesheet" href="components/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -21,7 +29,10 @@
                 <li><a href="#contact">Contact us</a></li>
             </ul>
             <div class="nav-icons">
-                <i class="fas fa-shopping-cart"></i>
+                <div class="cart-icon-wrapper">
+                    <i class="fas fa-shopping-cart" id="cart-icon"></i>
+                    <span class="cart-badge" id="cart-badge">0</span>
+                </div>
                 <i class="fas fa-user"></i>
                 <i class="fas fa-moon" id="theme-toggle"></i>
             </div>
@@ -304,13 +315,37 @@
                     <div class="modal-rating" id="modalProductRating"></div>
                     <p class="modal-price" id="modalProductPrice"></p>
                     <p class="modal-description" id="modalProductDescription"></p>
-                    <button class="btn-add-cart modal-add-cart">Add to cart</button>
+                    <button class="btn-add-cart modal-add-cart" id="modalAddToCart">Add to cart</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content cart-modal-content">
+            <span class="modal-close cart-close">&times;</span>
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+            </div>
+            <div class="cart-body" id="cartBody">
+                <!-- Cart items will be inserted here -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <p>Total: <span id="cartTotal">$0.00</span></p>
+                </div>
+                <button class="btn-primary cart-checkout">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Components -->
+    <script src="components/js/products.js"></script>
+    <script src="components/js/theme.js"></script>
+    <script src="components/js/productModal.js"></script>
+    <script src="components/js/cart.js"></script>
+    <script src="components/js/main.js"></script>
 </body>
 </html>
 
