@@ -96,6 +96,9 @@ body.light-theme .stat-item p {
     overflow: hidden;
     height: 600px;
     position: relative;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 body.light-theme .hero-product-card {
@@ -104,6 +107,11 @@ body.light-theme .hero-product-card {
 
 .hero-product-card:nth-child(2) {
     margin-top: 60px;
+}
+
+.hero-product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .product-image {

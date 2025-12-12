@@ -25,7 +25,9 @@ body.light-theme .section-title {
     background-color: #2a2a2a;
     border-radius: 12px;
     overflow: hidden;
-    transition: transform 0.3s;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 body.light-theme .product-card {
@@ -33,7 +35,8 @@ body.light-theme .product-card {
 }
 
 .product-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .product-image-wrapper {
@@ -64,12 +67,26 @@ body.light-theme .product-card {
     cursor: pointer;
     color: #1a1a1a;
     font-size: 18px;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
+    transform: scale(1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .favorite-btn:hover {
     background-color: #ffffff;
     color: #ef4444;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(239, 68, 68, 0.3);
+}
+
+.favorite-btn:active {
+    transform: scale(0.95);
+    animation: pulse 0.3s ease;
+}
+
+.favorite-btn i.fas {
+    color: #ef4444;
+    animation: bounce 0.5s ease;
 }
 
 .product-info {
@@ -281,11 +298,40 @@ body.light-theme .review-card p {
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btn-shop-now::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.btn-shop-now:hover::before {
+    width: 300px;
+    height: 300px;
 }
 
 .btn-shop-now:hover {
     background-color: #2a2a2a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.btn-shop-now:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .purchase-model {

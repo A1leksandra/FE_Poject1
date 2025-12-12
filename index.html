@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="components/css/products.css">
     <link rel="stylesheet" href="components/css/modal.css">
     <link rel="stylesheet" href="components/css/cart.css">
+    <link rel="stylesheet" href="components/css/favorites.css">
     <link rel="stylesheet" href="components/css/auth.css">
     <link rel="stylesheet" href="components/css/footer.css">
     <link rel="stylesheet" href="components/css/responsive.css">
@@ -33,6 +34,10 @@
                 <div class="cart-icon-wrapper">
                     <i class="fas fa-shopping-cart" id="cart-icon"></i>
                     <span class="cart-badge" id="cart-badge">0</span>
+                </div>
+                <div class="favorite-icon-wrapper">
+                    <i class="far fa-heart" id="favorite-icon"></i>
+                    <span class="favorite-badge" id="favorite-badge">0</span>
                 </div>
                 <i class="fas fa-user" id="user-icon"></i>
                 <i class="fas fa-moon" id="theme-toggle"></i>
@@ -258,20 +263,6 @@
         </div>
     </section>
 
-    <!-- First Purchase Discount Section -->
-    <section class="first-purchase">
-        <div class="purchase-content">
-            <div class="purchase-offer">
-                <h2>First purchase gets you 40% off total order!</h2>
-                <button class="btn-shop-now">Shop Now</button>
-                <img src="images/pink dress.jpg" alt="Pink Dress" class="purchase-model">
-            </div>
-            <div class="purchase-portrait">
-                <img src="images/Promotional Image.png" alt="Portrait" class="purchase-portrait-img">
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer class="footer" id="contact">
         <div class="footer-content">
@@ -337,6 +328,19 @@
                     <p>Total: <span id="cartTotal">$0.00</span></p>
                 </div>
                 <button class="btn-primary cart-checkout">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Favorites Modal -->
+    <div id="favoritesModal" class="modal">
+        <div class="modal-content favorites-modal-content">
+            <span class="modal-close favorites-close">&times;</span>
+            <div class="favorites-header">
+                <h2>Your Favorites</h2>
+            </div>
+            <div class="favorites-body" id="favoritesBody">
+                <!-- Favorite items will be inserted here -->
             </div>
         </div>
     </div>
@@ -412,6 +416,7 @@
     <script src="components/js/theme.js"></script>
     <script src="components/js/productModal.js"></script>
     <script src="components/js/cart.js"></script>
+    <script src="components/js/favorites.js"></script>
     <script src="components/js/auth.js"></script>
     <script src="components/js/main.js"></script>
 </body>
