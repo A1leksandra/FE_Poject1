@@ -183,3 +183,11 @@ body.light-theme .nav-icons {
     transform: scale(0.95);
 }
 
+.mobile-menu-toggle {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
