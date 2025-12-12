@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initProductModal();
     initCart();
     initFavorites();
+    initCheckout();
     initAuth();
 });
 

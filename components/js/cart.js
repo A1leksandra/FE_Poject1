@@ -157,6 +157,7 @@ function initCart() {
     window.updateQuantity = updateQuantity;
     window.removeFromCart = removeFromCart;
     window.addToCart = addToCart;
+    window.closeCartModal = closeCartModal;
 
     // Add event listeners
     cartIcon.addEventListener('click', openCartModal);
