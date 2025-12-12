@@ -735,3 +735,163 @@ body.light-theme .nav-icons {
     transform: rotate(15deg);
 }
 
+/* Product Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation: fadeIn 0.3s;
+}
+
+.modal.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #2a2a2a;
+    margin: auto;
+    padding: 0;
+    border: none;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 12px;
+    position: relative;
+    animation: slideDown 0.3s;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+body.light-theme .modal-content {
+    background-color: #ffffff;
+}
+
+.modal-close {
+    color: #ffffff;
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 2001;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+body.light-theme .modal-close {
+    color: #1a1a1a;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    color: #8b5cf6;
+}
+
+.modal-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px;
+}
+
+.modal-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.modal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.modal-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modal-info h2 {
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+body.light-theme .modal-info h2 {
+    color: #1a1a1a;
+}
+
+.modal-rating {
+    color: #fbbf24;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.modal-price {
+    font-size: 28px;
+    font-weight: 700;
+    color: #8b5cf6;
+    margin-bottom: 20px;
+}
+
+.modal-description {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #b0b0b0;
+    margin-bottom: 20px;
+}
+
+body.light-theme .modal-description {
+    color: #4a4a4a;
+}
+
+.modal-add-cart {
+    margin-top: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-body {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    
+    .modal-content {
+        width: 95%;
+    }
+    
+    .modal-info h2 {
+        font-size: 24px;
+    }
+}
+

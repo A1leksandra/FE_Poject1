@@ -58,9 +58,9 @@
     <section class="just-arrived" id="products">
         <h2 class="section-title">Just arrived</h2>
         <div class="products-grid">
-            <div class="product-card">
+            <div class="product-card" data-product="pink-blouse">
                 <div class="product-image-wrapper">
-                    <img src="images/pink dress.jpg" alt="Pink Blouse" class="product-img">
+                    <img src="images/pink dress.jpg" alt="Pink Blouse" class="product-img" style="cursor: pointer;">
                     <button class="favorite-btn"><i class="far fa-heart"></i></button>
                 </div>
                 <div class="product-info">
@@ -78,9 +78,9 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card" data-product="top-brown">
                 <div class="product-image-wrapper">
-                    <img src="images/brown top.jpg" alt="Top Brown" class="product-img">
+                    <img src="images/brown top.jpg" alt="Top Brown" class="product-img" style="cursor: pointer;">
                     <button class="favorite-btn"><i class="far fa-heart"></i></button>
                 </div>
                 <div class="product-info">
@@ -98,9 +98,9 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card" data-product="leather-yellow">
                 <div class="product-image-wrapper">
-                    <img src="images/yellow-jaket.jpg" alt="Leather Yellow" class="product-img">
+                    <img src="images/yellow-jaket.jpg" alt="Leather Yellow" class="product-img" style="cursor: pointer;">
                     <button class="favorite-btn"><i class="far fa-heart"></i></button>
                 </div>
                 <div class="product-info">
@@ -118,9 +118,9 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card" data-product="light-sweater">
                 <div class="product-image-wrapper">
-                    <img src="images/light sweater.jpg" alt="Light Sweater" class="product-img">
+                    <img src="images/light sweater.jpg" alt="Light Sweater" class="product-img" style="cursor: pointer;">
                     <button class="favorite-btn"><i class="far fa-heart"></i></button>
                 </div>
                 <div class="product-info">
@@ -290,6 +290,26 @@
             <p>&copy; 2023 Aleksandrina's clothes. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Product Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalProductImage" src="" alt="Product">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalProductName"></h2>
+                    <div class="modal-rating" id="modalProductRating"></div>
+                    <p class="modal-price" id="modalProductPrice"></p>
+                    <p class="modal-description" id="modalProductDescription"></p>
+                    <button class="btn-add-cart modal-add-cart">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
