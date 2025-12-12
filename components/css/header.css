@@ -101,3 +101,16 @@ body.light-theme .nav-icons {
     transform: rotate(15deg);
 }
 
+#user-icon {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#user-icon.logged-in {
+    color: #8b5cf6;
+}
+
+#user-icon:hover {
+    color: #8b5cf6;
+}
+

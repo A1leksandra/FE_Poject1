@@ -4,5 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initTheme();
     initProductModal();
     initCart();
+    initAuth();
 });
 
